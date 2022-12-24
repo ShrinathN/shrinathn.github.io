@@ -1,11 +1,21 @@
 <html>
-<script>
-alert("lets see if this works");
-x = prompt("X");
-alert(x + 10);
-</script>
-<body bgcolor="yellow">
-<h1>Testing...</h1>
+<body>
 </body>
-</html>
+<script>
+var i = 0;
+function annoy(){
+	if(i == 0) {
+		i = 1;
+		document.body.style.backgroundColor = "black";
+	} else {
+		i = 0;
+		document.body.style.backgroundColor = "white"
+	}
+}
 
+window.setInterval(annoy, 10);
+
+
+
+</script>
+</html>
